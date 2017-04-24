@@ -157,3 +157,12 @@ func TestParseMsisdn(t *testing.T) {
 	}	
 
 }
+
+func TestReturnString(t *testing.T) {
+	parsed := Msisdn{CDC: "973", SN: "123123", CI: "BA", MNO: "Zain"}
+	returnedString := "cdc:973, sn:123123, ci:BA, mno:Zain, err: "
+	actualReturnedString := ReturnString(parsed)
+	if returnedString != actualReturnedString {
+		t.Errorf("Expected the string to be %s but instead got %s!",  returnedString, actualReturnedString)
+	}	
+}
