@@ -13,8 +13,7 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "juremalovrh/gobox"
-  config.vm.synced_folder "./msisdn", "/home/ubuntu/go/src"
-  config.ssh.insert_key = false
+  config.vm.synced_folder "./msisdn", "/home/vagrant/go/src/msisdn"
   #config.vm.provider "virtualbox" do |v|
     # Basebox ubuntu/xenial64 comes with following Vagrantfile config and causes https://github.com/joelhandwell/ubuntu_vagrant_boxes/issues/1
   #  v.customize [ "modifyvm", :id, "--uart1", "0x3F8", "4" ]
