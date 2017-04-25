@@ -19,4 +19,4 @@ For the RPC part, JSON-RPC was chosen. It was chosen because with JSON-RPC we ca
 - ```cd``` into it
 - ```vagrant up``` note: this may take some time as this box is custom and because of this does not have consistent download rate
 - ```vagrant ssh``` 
-- after being succesfully ssh-ed, go to /home/vagrant/go/src/msisdn and run ```go run client.go```. This will start RPC server and run 10 different calls.
+- after being succesfully ssh-ed, go to ```/home/vagrant/go/src/msisdn``` and run ```go run client.go```. This will start RPC server and run 10 different calls.
